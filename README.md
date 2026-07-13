@@ -1,33 +1,77 @@
-# Hi, I am building practical local-first automation
+<div align="center">
 
-I turn recurring operational pain into small open-source tools that are useful before they become complicated. Current focus: reliable coding-agent automation and explainable procurement intelligence.
+# Practical, local-first automation
 
-## Featured projects
+I turn recurring operational pain into small open-source tools with clear failure modes, offline defaults, reproducible demos, and honest scope.
 
-### [AgentCron](https://github.com/shkyyy18/cc-autopilot)
+[OpenBid Intel demo](https://shkyyy18.github.io/openbid-intel/) | [Flagship projects](#flagship-projects) | [Engineering principles](#engineering-principles)
 
-**Cron + watchdog for Codex, Claude Code, Gemini CLI, and custom commands.**
+</div>
 
-- timeout and process-tree cleanup
-- silent-failure detection and bounded retries
-- Windows Task Scheduler plus Linux and macOS cron
-- structured UTF-8 logs and zero runtime dependencies
+## Flagship projects
 
-[![AgentCron CI](https://github.com/shkyyy18/cc-autopilot/actions/workflows/ci.yml/badge.svg)](https://github.com/shkyyy18/cc-autopilot/actions/workflows/ci.yml)
-[![AgentCron release](https://img.shields.io/github/v/release/shkyyy18/cc-autopilot)](https://github.com/shkyyy18/cc-autopilot/releases/latest)
-[![AgentCron stars](https://img.shields.io/github/stars/shkyyy18/cc-autopilot?style=social)](https://github.com/shkyyy18/cc-autopilot)
+<table>
+<tr>
+<td width="50%" valign="top">
 
 ### [OpenBid Intel](https://github.com/shkyyy18/openbid-intel)
 
-**Turn public tender notices into ranked, explainable sales opportunities - locally.**
+**Rank public tender notices into explainable sales opportunities, locally.**
 
-- configurable product, account, region, budget, and noise-term scoring
-- JSON, JSONL, CSV, and public CCGP list-page inputs
-- SQLite storage, feedback, Markdown digests, and supplier relationship reports
-- zero runtime dependencies and 32 offline tests
+- reusable industry profile packs and multi-profile routing
+- CSV, JSON, JSONL, RSS/Atom, and conservative connector architecture
+- SQLite history, feedback calibration, CRM export, digest, and portable dashboard
+- **104 offline tests**, Linux/Windows CI, zero runtime dependencies
 
-[![OpenBid Intel CI](https://github.com/shkyyy18/openbid-intel/actions/workflows/tests.yml/badge.svg)](https://github.com/shkyyy18/openbid-intel/actions/workflows/tests.yml)
-[![OpenBid Intel release](https://img.shields.io/github/v/release/shkyyy18/openbid-intel)](https://github.com/shkyyy18/openbid-intel/releases/latest)
-[![OpenBid Intel stars](https://img.shields.io/github/stars/shkyyy18/openbid-intel?style=social)](https://github.com/shkyyy18/openbid-intel)
+[Live synthetic demo](https://shkyyy18.github.io/openbid-intel/) | [30-second quick start](https://github.com/shkyyy18/openbid-intel#30-second-quick-start) | [Contribute](https://github.com/shkyyy18/openbid-intel/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
-If either project solves a real problem for you, try the quick start and open an issue with the workflow or failure mode you want covered.
+[![CI](https://github.com/shkyyy18/openbid-intel/actions/workflows/tests.yml/badge.svg)](https://github.com/shkyyy18/openbid-intel/actions/workflows/tests.yml)
+[![Release](https://img.shields.io/github/v/release/shkyyy18/openbid-intel)](https://github.com/shkyyy18/openbid-intel/releases/latest)
+[![Stars](https://img.shields.io/github/stars/shkyyy18/openbid-intel?style=social)](https://github.com/shkyyy18/openbid-intel)
+
+</td>
+<td width="50%" valign="top">
+
+### [AgentCron](https://github.com/shkyyy18/cc-autopilot)
+
+**Cron plus a watchdog for unattended AI coding agents.**
+
+- Codex, Claude Code, Gemini CLI, and custom commands
+- retries, timeout, process-tree cleanup, and silent-failure detection
+- structured local logs and privacy-safe webhook failure notifications
+- Windows Task Scheduler plus Linux/macOS cron; zero runtime dependencies
+
+[30-second quick start](https://github.com/shkyyy18/cc-autopilot#30-second-quick-start) | [Notifications](https://github.com/shkyyy18/cc-autopilot/blob/main/docs/notifications.md) | [Contribute](https://github.com/shkyyy18/cc-autopilot/issues)
+
+[![CI](https://github.com/shkyyy18/cc-autopilot/actions/workflows/ci.yml/badge.svg)](https://github.com/shkyyy18/cc-autopilot/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/shkyyy18/cc-autopilot)](https://github.com/shkyyy18/cc-autopilot/releases/latest)
+[![Stars](https://img.shields.io/github/stars/shkyyy18/cc-autopilot?style=social)](https://github.com/shkyyy18/cc-autopilot)
+
+</td>
+</tr>
+</table>
+
+## Labs
+
+### [Personal Health Sync](https://github.com/shkyyy18/personal-health-sync)
+
+A cross-platform, vendor-neutral local observation store with generic CSV import, a no-hardware synthetic demo, portable HTML reporting, and optional Strava/Xiaomi connectors. Apple Health, Health Connect, Huawei, and Garmin adapters are roadmap items, not claimed as complete.
+
+### [AI Money Lab](https://github.com/shkyyy18/ai-money-lab)
+
+An evidence ledger for small AI business experiments. Machine-readable manifests and CI keep status, dates, evidence levels, and revenue claims consistent. The first experiment is explicitly **inconclusive** because a local self-test is not market validation.
+
+## Current external signal
+
+AgentCron received the portfolio's first outside fork and code contribution. The webhook notification adapter was reviewed through isolated GitHub Actions, merged with contributor credit, and then security-hardened for the next release.
+
+## Engineering principles
+
+- useful before complicated;
+- local-first where privacy or portability matters;
+- synthetic demos before credentials or hardware;
+- tests and CI on the platforms users actually run;
+- explicit limits instead of pretending roadmap features already exist;
+- external contributions reviewed, tested, and credited.
+
+If a project fits your workflow, run its quick start and open an issue describing the real failure mode you want solved.
