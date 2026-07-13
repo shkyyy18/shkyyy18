@@ -36,7 +36,7 @@ I turn recurring operational pain into small open-source tools with clear failur
 
 **Cron plus a watchdog for unattended AI coding agents.**
 
-- Codex, Claude Code, Gemini CLI, and custom commands
+- Codex, Gemini CLI, and custom commands
 - retries, timeout, process-tree cleanup, and silent-failure detection
 - structured local logs and privacy-safe webhook failure notifications
 - Windows Task Scheduler plus Linux/macOS cron; zero runtime dependencies
