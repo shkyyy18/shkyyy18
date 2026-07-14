@@ -65,6 +65,16 @@ An evidence ledger for small AI business experiments. Machine-readable manifests
 
 AgentCron received the portfolio's first outside fork and code contribution. The webhook notification adapter was reviewed through isolated GitHub Actions, merged with contributor credit, and then security-hardened for the next release.
 
+## Validate a workflow today
+
+I am looking for concrete failure modes and real, sanitized workflows rather than generic feature requests:
+
+- **Unattended agents:** run the [AgentCron ten-minute evaluation](https://github.com/shkyyy18/cc-autopilot/blob/main/docs/recipes.md#ten-minute-evaluation-checklist), then describe the scheduler, runner, and failure state that is still hard to observe.
+- **Tender qualification:** run the [OpenBid end-to-end case study](https://github.com/shkyyy18/openbid-intel/blob/main/docs/END_TO_END_CASE_STUDY.md), then share the industry, permitted input format, and qualification action you need.
+- **First contribution:** choose an open [`good first issue`](https://github.com/issues?q=owner%3Ashkyyy18+state%3Aopen+label%3A%22good+first+issue%22) with explicit offline tests and privacy boundaries.
+
+Do not post credentials, private prompts, customer documents, or non-public procurement data.
+
 ## Engineering principles
 
 - useful before complicated;
