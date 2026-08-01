@@ -1,87 +1,23 @@
 <div align="center">
 
-# Practical, local-first automation
+# Local-first tools I actually use
 
-I turn recurring operational pain into small open-source tools with clear failure modes, offline defaults, reproducible demos, and honest scope.
-
-[OpenBid Intel demo](https://shkyyy18.github.io/openbid-intel/) | [Flagship projects](#flagship-projects) | [Engineering principles](#engineering-principles)
+I build small tools that solve my own problems first, with clear failure modes, offline defaults, and honest scope.
 
 </div>
 
-## Flagship projects
+## Flagship project
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### [Mi Fitness Data Bridge](https://github.com/shkyyy18/mi-fitness-data-bridge)
 
-### [OpenBid Intel](https://github.com/shkyyy18/openbid-intel)
+**本地优先的小米运动健康数据桥接器：把你自己的米家数据导出到 SQLite/JSON/CSV，或通过 MCP 接入 Codex、Claude Code、Kimi、GLM、DeepSeek 等 AI 大模型。**
 
-**Rank public tender notices into explainable sales opportunities, locally.**
-
-- reusable industry profile packs and multi-profile routing
-- CSV, JSON, JSONL, RSS/Atom, and conservative connector architecture
-- SQLite history, feedback calibration, CRM export, digest, and portable dashboard
-- **104 offline tests**, Linux/Windows CI, zero runtime dependencies
-
-[Live synthetic demo](https://shkyyy18.github.io/openbid-intel/) | [30-second quick start](https://github.com/shkyyy18/openbid-intel#30-second-quick-start) | [Contribute](https://github.com/shkyyy18/openbid-intel/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-
-[![CI](https://github.com/shkyyy18/openbid-intel/actions/workflows/tests.yml/badge.svg)](https://github.com/shkyyy18/openbid-intel/actions/workflows/tests.yml)
-[![Release](https://img.shields.io/github/v/release/shkyyy18/openbid-intel)](https://github.com/shkyyy18/openbid-intel/releases/latest)
-[![Stars](https://img.shields.io/github/stars/shkyyy18/openbid-intel?style=social)](https://github.com/shkyyy18/openbid-intel)
-
-</td>
-<td width="50%" valign="top">
-
-### [AgentCron](https://github.com/shkyyy18/cc-autopilot)
-
-**Cron plus a watchdog for unattended AI coding agents.**
-
-- Codex, Gemini CLI, and custom commands
-- retries, timeout, process-tree cleanup, and silent-failure detection
-- structured local logs and privacy-safe webhook failure notifications
-- Windows Task Scheduler plus Linux/macOS cron; zero runtime dependencies
-
-[30-second quick start](https://github.com/shkyyy18/cc-autopilot#30-second-quick-start) | [Notifications](https://github.com/shkyyy18/cc-autopilot/blob/main/docs/notifications.md) | [Contribute](https://github.com/shkyyy18/cc-autopilot/issues)
-
-[![CI](https://github.com/shkyyy18/cc-autopilot/actions/workflows/ci.yml/badge.svg)](https://github.com/shkyyy18/cc-autopilot/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/shkyyy18/cc-autopilot)](https://github.com/shkyyy18/cc-autopilot/releases/latest)
-[![Stars](https://img.shields.io/github/stars/shkyyy18/cc-autopilot?style=social)](https://github.com/shkyyy18/cc-autopilot)
-
-</td>
-</tr>
-</table>
-
-## Labs
-
-### [Personal Health Sync](https://github.com/shkyyy18/personal-health-sync)
-
-A cross-platform, vendor-neutral local observation store with generic CSV import, a no-hardware synthetic demo, portable HTML reporting, and optional Strava/Xiaomi connectors. Apple Health, Health Connect, Huawei, and Garmin adapters are roadmap items, not claimed as complete.
-
-### [AI Money Lab](https://github.com/shkyyy18/ai-money-lab)
-
-An evidence ledger for small AI business experiments. Machine-readable manifests and CI keep status, dates, evidence levels, and revenue claims consistent. The first experiment is explicitly **inconclusive** because a local self-test is not market validation.
-
-## Current external signal
-
-AgentCron received the portfolio's first outside fork and code contribution. The webhook notification adapter was reviewed through isolated GitHub Actions, merged with contributor credit, and then security-hardened for the next release.
-
-## Validate a workflow today
-
-I am looking for concrete failure modes and real, sanitized workflows rather than generic feature requests:
-
-- **Unattended agents:** run the [AgentCron ten-minute evaluation](https://github.com/shkyyy18/cc-autopilot/blob/main/docs/recipes.md#ten-minute-evaluation-checklist), then describe the scheduler, runner, and failure state that is still hard to observe.
-- **Tender qualification:** run the [OpenBid end-to-end case study](https://github.com/shkyyy18/openbid-intel/blob/main/docs/END_TO_END_CASE_STUDY.md), then share the industry, permitted input format, and qualification action you need.
-- **First contribution:** choose an open [`good first issue`](https://github.com/issues?q=owner%3Ashkyyy18+state%3Aopen+label%3A%22good+first+issue%22) with explicit offline tests and privacy boundaries.
-
-Do not post credentials, private prompts, customer documents, or non-public procurement data.
+- Local-first: your health data never leaves your machine
+- Export to SQLite / JSON / CSV
+- MCP server for AI coding assistants
 
 ## Engineering principles
 
 - useful before complicated;
-- local-first where privacy or portability matters;
-- synthetic demos before credentials or hardware;
-- tests and CI on the platforms users actually run;
-- explicit limits instead of pretending roadmap features already exist;
-- external contributions reviewed, tested, and credited.
-
-If a project fits your workflow, run its quick start and open an issue describing the real failure mode you want solved.
+- local-first where privacy matters;
+- explicit limits instead of pretending roadmap features already exist.
